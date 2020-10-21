@@ -11,20 +11,21 @@ export default function Email() {
         e.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_SERVER_ID, process.env.REACT_APP_TEMPLETE_ID, e.target, process.env.REACT_APP_USER_ID)
       .then((result) => {
-          console.log(result.text);
+          console.log(result.text)
           Swal.fire({
             title: 'Thanks for contact us we are come to you as soon as possible!',
             text: 'Great!',
             icon: 'success',            
           })
       }, (error) => {
-          console.log(error.text);Swal.fire({
+        console.log(error.text)
+          Swal.fire({
             title: 'Oopp... There is something error in newtwork please try again!',
             text: 'sorry for inconvient!',
             icon: 'error',            
           })
       });
-        e.reset();
+        
     }
     return (
         <Layout>

@@ -10,11 +10,12 @@ export default function HomePage() {
         <Layout>
             <Row className="mt-5">
                 <Col className="">
-                    <p className="intro-paragraph">
+                    
                         <Typist>
+                        <p className="intro-paragraph">
                         Hello, my name is Mohsin Ali. I am Mern Stack Backend / Frontend developer Living in Pakistan Sindh
-                        </Typist>
-                    </p>
+                        </p></Typist>
+                   
                     <div className="avatar">
                         <img src={avatar} alt={avatar} />
                     </div>
